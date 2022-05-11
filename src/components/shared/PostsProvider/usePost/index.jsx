@@ -1,3 +1,3 @@
 import usePost from "./usePost";
 
-export default usePost
+export default usePost;

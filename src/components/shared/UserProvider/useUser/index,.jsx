@@ -1,3 +1,3 @@
 import useUser from "./useUser";
 
-export default useUser
+export default useUser;

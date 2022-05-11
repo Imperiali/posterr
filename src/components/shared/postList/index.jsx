@@ -1,3 +1,3 @@
 import PostList from "./postList";
 
-export default PostList
+export default PostList;

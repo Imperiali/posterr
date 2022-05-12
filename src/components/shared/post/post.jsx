@@ -46,7 +46,7 @@ const Post = (props) => {
         )}
         <button
           onClick={() => pathToProfile(user)}
-          className="text-gray-400 cursor-pointer"
+          className="text-gray-400 cursor-pointer self-start"
         >
           {user}
         </button>

@@ -7,7 +7,7 @@ import { useState } from "react";
 import Reply from "../../../../assets/Reply";
 
 const Post = (props) => {
-  const { message, user, likes, originalUser, originalPost, type } = props;
+  const { id: postId, message, user, likes, originalUser, originalPost, type } = props;
   const location = useLocation();
   const navigate = useNavigate();
   const { likePost, dislikePost, addPost } = usePost();
@@ -57,7 +57,7 @@ const Post = (props) => {
             {postLiked ? (
               <button
                 onClick={() =>
-                  dislikePost({ postUsername: user, currentUsername })
+                  dislikePost({ postId, currentUsername })
                 }
                 className="mr-4 text-pink-500"
               >
@@ -66,7 +66,7 @@ const Post = (props) => {
             ) : (
               <button
                 onClick={() =>
-                  likePost({ postUsername: user, currentUsername })
+                  likePost({ postId, currentUsername })
                 }
                 className="mr-4"
               >

@@ -20,7 +20,7 @@ const Input = (props) => {
     evt.preventDefault();
     const today = new Date().toLocaleDateString("en").replaceAll("/", "-");
     const postsToday = ownPosts
-      .slice(-5)
+      .slice(0, 5)
       .filter(({ createdAt }) => createdAt === today);
 
     if (postsToday.length >= 5) {

@@ -32,7 +32,10 @@ export const postsReducer = (state, action) => {
     }
     case "ADD_POST": {
       let updatedPosts = state.posts;
-      updatedPosts = [action.post, ...updatedPosts];
+      updatedPosts = [{
+        id: state.posts.length + 1,
+        ...action.post
+      }, ...updatedPosts];
 
       const updatedState = {
         ...state,
@@ -46,7 +49,7 @@ export const postsReducer = (state, action) => {
     case "LIKE_POST": {
       state.posts.map((post) => {
         if (
-          post.user === action.postUsername &&
+          post.id === action.postId &&
           post.likes.indexOf(action.currentUsername) === -1
         ) {
           post.likes.push(action.currentUsername);
@@ -64,7 +67,7 @@ export const postsReducer = (state, action) => {
     case "DISLIKE_POST": {
       state.posts.map((post) => {
         if (
-          post.user === action.postUsername &&
+          post.id === action.postId &&
           post.likes.indexOf(action.currentUsername) !== -1
         ) {
           post.likes.splice(post.likes.indexOf(action.currentUsername), 1);

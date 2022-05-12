@@ -3,6 +3,7 @@ const postService = () => {
     setTimeout(() => {
       resolve([
         {
+          id: 1,
           user: "TonyStark",
           message: "Finally buy Posterr, great acquisition",
           likes: [],
@@ -10,6 +11,7 @@ const postService = () => {
           createdAt: "05-09-2022",
         },
         {
+          id: 2,
           user: "MaryJane",
           message: "Can't wait to see Peter <3",
           likes: [],
@@ -17,6 +19,7 @@ const postService = () => {
           createdAt: "05-09-2022",
         },
         {
+          id: 3,
           user: "HarryOsborn",
           message:
             "Back to the lab, better have someone working on there today",
@@ -25,6 +28,7 @@ const postService = () => {
           createdAt: "05-09-2022",
         },
         {
+          id: 4,
           user: "DrStrange",
           message: "Let's tru this spell again, hope not to be interrupted",
           likes: [],

@@ -17,13 +17,13 @@ const usePost = (username = "") => {
     ownPosts,
     addPost: (post) => dispatch({ type: "ADD_POST", post }),
     fetchPosts: (posts) => dispatch({ type: "FETCH_POSTS", posts }),
-    likePost: ({ currentUsername, postUsername }) =>
-      dispatch({ type: "LIKE_POST", currentUsername, postUsername }),
-    dislikePost: ({ currentUsername, postUsername }) =>
+    likePost: ({ currentUsername, postId }) =>
+      dispatch({ type: "LIKE_POST", currentUsername, postId }),
+    dislikePost: ({ currentUsername, postId }) =>
       dispatch({
         type: "DISLIKE_POST",
         currentUsername,
-        postUsername,
+        postId,
       }),
   };
 };

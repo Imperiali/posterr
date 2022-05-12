@@ -52,7 +52,7 @@ const Profile = () => {
           <div className="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
             <button
               onClick={() => navigate(-1)}
-              className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              className="w-10 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
               data-modal-toggle="defaultModal"
             >
               <Close />

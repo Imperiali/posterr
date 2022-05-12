@@ -19,7 +19,7 @@ const Navbar = () => {
             Posterr
           </span>
         </Link>
-        <Link to={pathToProfile}>
+        <Link to={pathToProfile} className="w-12">
           <Profile />
         </Link>
       </div>

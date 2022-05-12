@@ -64,7 +64,7 @@ const Input = (props) => {
         </div>
         <button
           type="submit"
-          className="text-white focus:bg-gray-800 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center dark:focus:ring-blue-800"
+          className="w-20 text-white focus:bg-gray-800 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center dark:focus:ring-blue-800"
         >
           <ArrowRight />
         </button>

@@ -1,6 +1,6 @@
-# Posterr 📃
+# Twiks 📃
 
-Posterr is a Twitter-like front-end project
+Twiks is a Twitter-like front-end project
 
 ## Topics ✍️
 
